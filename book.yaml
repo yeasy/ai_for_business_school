@@ -1,0 +1,22 @@
+# mdpress book configuration
+# Chapters are loaded automatically from SUMMARY.md
+# Docs: https://github.com/yeasy/mdpress
+
+book:
+  title: "商学院 AI 必修课：企业如何迎接智能体浪潮"
+  author: "杨保华"
+  version: "1.0.0"
+  language: "zh-CN"
+  cover:
+    background: "#0f2942"
+
+# No chapters section required. Chapters are loaded from SUMMARY.md
+
+style:
+  theme: "elegant"
+  page_size: "A4"
+
+output:
+  filename: "商学院AI必修课.pdf"
+  toc: true
+  cover: true
