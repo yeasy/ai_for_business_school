@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+*~
+
+# mdPress / GitBook 构建产物
+_book/
+_site/
+site/
+dist/
+output/
+book/
+*.epub
+*.mobi
+book.pdf
+*.html.zip
+
+# mdPress 缓存
+.mdpress/
+.cache/
+
+# Node（如使用旧版 gitbook-cli）
+node_modules/
+package-lock.json
+
+# Obsidian 编辑器工作文件
+.obsidian/
+*.canvas
+
+# 临时文件
+*.tmp
+*.bak
+*.log
