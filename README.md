@@ -81,6 +81,7 @@
 本书讲的是商业决策，技术细节点到为止。如果读到某处想往深里追——智能体到底怎么实现、模型内部如何运转、安全攻防有哪些门道——作者的下列开源书籍可作延伸阅读，均可在 GitHub 免费获取：
 
 - [《智能体 AI 权威指南》](https://github.com/yeasy/agentic_ai_guide)：智能体前沿技术的深入剖析，对应本书第二章、第五章的技术纵深。
+- [《智能体 Harness 工程指南》](https://github.com/yeasy/harness_engineering_guide)：拆解“智能体 = 大模型 + Harness”的工程原理与实现，对应本书第五章、第六章背后的实现纵深。
 - [《大模型原理与架构》](https://github.com/yeasy/llm_internals)：从 Transformer 架构到训练部署，对应本书第四章背后的原理全貌。
 - [《大模型上下文工程权威指南》](https://github.com/yeasy/context_engineering_guide)：RAG、记忆与上下文供给的工程实践，对应 5.3、5.4 节。
 - [《大模型提示词工程指南》](https://github.com/yeasy/prompt_engineering_guide)：与大模型高效对话的方法，对应 4.2 节的技术背景。
