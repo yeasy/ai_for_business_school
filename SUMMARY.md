@@ -36,7 +36,7 @@
   * [5.2 让 AI 动手干活：工具调用](05_agent_tech/5.2_tool_use.md)
   * [5.3 RAG：让 AI 用上企业知识](05_agent_tech/5.3_rag.md)
   * [5.4 让 AI 记住企业：记忆与上下文工程](05_agent_tech/5.4_context_eng.md)
-  * [5.5 智能体的"通用插座"：MCP 与 A2A](05_agent_tech/5.5_mcp_a2a.md)
+  * [5.5 智能体的“通用插座”：MCP 与 A2A](05_agent_tech/5.5_mcp_a2a.md)
   * [5.6 安全边界：提示注入与越权风险](05_agent_tech/5.6_security.md)
   * [本章小结](05_agent_tech/summary.md)
 * [第六章 平台与生态：开源框架与商业平台](06_ecosystem/README.md)

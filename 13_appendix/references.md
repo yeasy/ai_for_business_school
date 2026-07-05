@@ -2,11 +2,11 @@
 
 以下为各章正文引用的外部来源，按章分组；同一来源多章引用只在首次出现章列出。条目前的标签区分来源类型：【政策】政策法规与政府文件，【论文】学术论文与期刊文章，【官方】厂商官方博客、公告、文档与财报，【机构】研究机构与行业组织的报告及新闻稿，【媒体】媒体报道，【项目】开源项目与产品主页。
 
-三点说明。第一，链接以本书成稿（2026 年年中）时可访问为准，若失效可按"机构＋标题"检索原文。第二，开源项目与产品主页类链接内容持续更新，标注的访问时间为 2026 年年中。第三，第十一章所引研究（SignalFire 报告、斯坦福数字经济实验室与 ADP 合作研究等）正文未附外部链接，其出处与口径说明见[数据与案例证据索引](evidence_index.md)。
+三点说明。第一，链接以本书成稿（2026 年年中）时可访问为准，若失效可按“机构＋标题”检索原文。第二，开源项目与产品主页类链接内容持续更新，标注的访问时间为 2026 年年中。第三，第十一章所引研究（SignalFire 报告、斯坦福数字经济实验室与 ADP 合作研究等）正文未附外部链接，其出处与口径说明见[数据与案例证据索引](evidence_index.md)。
 
 ### 前言
 
-- 【政策】国务院：《关于深入实施"人工智能+"行动的意见》（国发〔2025〕11 号），2025 年。<https://www.gov.cn/zhengce/content/202508/content_7037861.htm>
+- 【政策】国务院：《关于深入实施“人工智能+”行动的意见》（国发〔2025〕11 号），2025 年。<https://www.gov.cn/zhengce/content/202508/content_7037861.htm>
 
 ### 第一章 人工智能的商业本质
 
@@ -26,8 +26,8 @@
 ### 第三章 为什么是现在：拐点的经济学
 
 - 【官方】Anthropic：《Donating the Model Context Protocol and establishing the Agentic AI Foundation》（MCP 捐赠公告），2025 年。<https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation>
-- 【官方】OpenAI：《Ending the Capability Overhang》（"能力悬垂"报告），2026 年。<https://openai.com/index/how-countries-can-end-the-capability-overhang/>
-- 【媒体】Axios：达沃斯 OpenAI"能力悬垂"报道，2026 年。<https://www.axios.com/2026/01/19/davos-openai-warns-capability-overhang>
+- 【官方】OpenAI：《Ending the Capability Overhang》（“能力悬垂”报告），2026 年。<https://openai.com/index/how-countries-can-end-the-capability-overhang/>
+- 【媒体】Axios：达沃斯 OpenAI“能力悬垂”报道，2026 年。<https://www.axios.com/2026/01/19/davos-openai-warns-capability-overhang>
 - 【机构】ARC Prize：《OpenAI o3 Breakthrough High Score on ARC-AGI-Pub》（o3 高算力档成本测算），2024 年。<https://arcprize.org/blog/oai-o3-pub-breakthrough>
 
 ### 第四章 大模型的能力与局限
@@ -105,17 +105,17 @@
 
 ### 第八章 行业落地案例深读
 
-- 【政策】工业和信息化部等八部门：《"人工智能+制造"专项行动实施意见》，2026 年。<https://www.nda.gov.cn/sjj/zwgk/zcfb/0112/20260107214358696030895_pc.html>
+- 【政策】工业和信息化部等八部门：《“人工智能+制造”专项行动实施意见》，2026 年。<https://www.nda.gov.cn/sjj/zwgk/zcfb/0112/20260107214358696030895_pc.html>
 - 【官方】Siemens：《Siemens Industrial Copilot expanded, adopted by thyssenkrupp》（新闻稿），2025 年。<https://press.siemens.com/global/en/pressrelease/siemens-industrial-copilot-expanded-adopted-thyssenkrupp>
 - 【官方】Walmart：《Walmart Unveils New AI-Powered Tools To Empower 1.5 Million Associates》（公司公告），2025 年。<https://corporate.walmart.com/news/2025/06/24/walmart-unveils-new-ai-powered-tools-to-empower-1-5-million-associates>
 - 【官方】英矽智能（Insilico Medicine）：rentosertib 临床进展公司公告，2025 年。<https://insilico.com/news_sc/dt2e5ogh61-rentosertib>
-- 【媒体】新浪财经：邮储银行 AI 交易机器人"邮小宝"相关报道，2025 年。<https://finance.sina.com.cn/jjxw/2025-05-09/doc-inevysvr8980965.shtml>
+- 【媒体】新浪财经：邮储银行 AI 交易机器人“邮小宝”相关报道，2025 年。<https://finance.sina.com.cn/jjxw/2025-05-09/doc-inevysvr8980965.shtml>
 
 ### 第九章 落地方法论：从试点到规模化
 
 - 【论文】Brynjolfsson, E., Rock, D. & Syverson, C.：《The Productivity J-Curve: How Intangibles Complement General Purpose Technologies》，American Economic Journal: Macroeconomics，2021 年。<https://www.aeaweb.org/articles?id=10.1257/mac.20180386>
 - 【机构】Gartner：《Gartner Hype Cycle Identifies Top AI Innovations in 2025》（新闻稿），2025 年。<https://www.gartner.com/en/newsroom/press-releases/2025-08-05-gartner-hype-cycle-identifies-top-ai-innovations-in-2025>
-- 【媒体】Fortune：MIT 报告报道（"约 95% 的企业生成式 AI 试点未形成可衡量的利润影响"），2025 年。<https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/>
+- 【媒体】Fortune：MIT 报告报道（“约 95% 的企业生成式 AI 试点未形成可衡量的利润影响”），2025 年。<https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/>
 
 ### 第十章 战略选择与投资节奏
 
@@ -126,7 +126,7 @@
 - 【政策】国家互联网信息办公室等四部门：《人工智能生成合成内容标识办法》，2025 年。<https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm>
 - 【政策】国家互联网信息办公室：生成式人工智能服务备案与登记情况公告，2026 年。<https://www.cac.gov.cn/2026-03/17/c_1775482074695536.htm>
 - 【政策】欧盟：《人工智能法案》（Regulation (EU) 2024/1689），2024 年。<https://eur-lex.europa.eu/eli/reg/2024/1689/oj>
-- 【政策】欧盟理事会：《Artificial intelligence: Council and Parliament agree to simplify and streamline rules》（"数字综合修正案"政治协议新闻稿），2026 年。<https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/>
+- 【政策】欧盟理事会：《Artificial intelligence: Council and Parliament agree to simplify and streamline rules》（“数字综合修正案”政治协议新闻稿），2026 年。<https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/>
 - 【机构】美国国家标准与技术研究院（NIST）：《AI Risk Management Framework》（AI RMF 1.0），2023 年。<https://www.nist.gov/itl/ai-risk-management-framework>
 - 【机构】国际标准化组织：《ISO/IEC 42001:2023 — Artificial intelligence management system》，2023 年。<https://www.iso.org/standard/81230.html>
 
