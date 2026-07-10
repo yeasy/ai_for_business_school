@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "currency": "CNY",
+  "cases": [
+    {
+      "id": "TCO-01",
+      "type": "tco",
+      "title": "客服智能体三年总拥有成本",
+      "inputs": {
+        "implementation_cost": 600000,
+        "data_preparation_cost": 400000,
+        "monthly_model_cost": 30000,
+        "monthly_platform_cost": 20000,
+        "annual_operations_cost": 480000,
+        "months": 36,
+        "years": 3
+      },
+      "expected": {
+        "tco": 4240000
+      }
+    },
+    {
+      "id": "NPV-01",
+      "type": "npv",
+      "title": "销售助理项目净现值",
+      "inputs": {
+        "initial_investment": 1200000,
+        "annual_net_cash_flows": [500000, 650000, 750000],
+        "discount_rate": 0.10
+      },
+      "expected": {
+        "npv": 355221.64
+      }
+    },
+    {
+      "id": "BE-01",
+      "type": "break_even",
+      "title": "单据审核项目回本月",
+      "inputs": {
+        "initial_investment": 800000,
+        "monthly_benefit": 180000,
+        "monthly_operating_cost": 60000
+      },
+      "expected": {
+        "break_even_month": 7
+      }
+    },
+    {
+      "id": "EL-01",
+      "type": "expected_loss",
+      "title": "风险成本年度期望损失",
+      "inputs": {
+        "risk_scenarios": [
+          {"name": "错误承诺", "probability": 0.08, "loss": 2000000},
+          {"name": "数据泄露", "probability": 0.03, "loss": 5000000},
+          {"name": "轻微服务中断", "probability": 0.20, "loss": 300000}
+        ]
+      },
+      "expected": {
+        "expected_loss": 370000
+      }
+    }
+  ]
+}
