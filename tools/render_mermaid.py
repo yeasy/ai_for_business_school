@@ -7,14 +7,45 @@ is chunked and retried because a large mmdc pass can crash headless Chrome. Writ
 d-1.svg .. d-N.svg into --svg-out and fails if any diagram is missing.
 """
 import os, re, sys, glob, json, shutil, subprocess, argparse
+from pathlib import Path
+
+
+SAFETY_MESSAGE = "must be an independent directory outside the book and protected roots"
+
+
+def validate_output_directory(book_dir, svg_out):
+    book = Path(book_dir).expanduser().resolve()
+    output = Path(svg_out).expanduser().resolve()
+    repository = Path(__file__).resolve().parents[1]
+    protected = {
+        Path(output.anchor).resolve(),
+        Path.home().resolve(),
+        Path.cwd().resolve(),
+        repository,
+    }
+    overlaps_book = (
+        output == book or output in book.parents or book in output.parents
+    )
+    if output in protected or overlaps_book:
+        raise ValueError(f"--svg-out {output} {SAFETY_MESSAGE}")
+    return book, output
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--book-dir", default=".")
 ap.add_argument("--svg-out", required=True)
 ap.add_argument("--chunk", type=int, default=25)
 a = ap.parse_args()
-BOOK, SVG = os.path.abspath(a.book_dir), os.path.abspath(a.svg_out)
-shutil.rmtree(SVG, ignore_errors=True); os.makedirs(SVG)
+try:
+    book_path, svg_path = validate_output_directory(a.book_dir, a.svg_out)
+except ValueError as error:
+    print(f"Mermaid rendering failed: {error}", file=sys.stderr)
+    sys.exit(2)
+BOOK, SVG = str(book_path), str(svg_path)
+svg_path.mkdir(parents=True, exist_ok=True)
+for pattern in ("d-*.svg", "_c*.svg", "_chunk.md", "_pptr.json", "_rc.json"):
+    for stale in svg_path.glob(pattern):
+        if stale.is_file() or stale.is_symlink():
+            stale.unlink()
 
 # extract mermaid sources in SUMMARY order (same order build_mobile_book.py uses)
 srcs, seen = [], set()

@@ -126,6 +126,22 @@ class ProjectRulesTests(unittest.TestCase):
             self.assertIn(official, text, relative)
             self.assertNotIn(stale, text, relative)
 
+    def test_mit_nanda_evidence_note_matches_the_exact_numbers_used_in_body(self):
+        body = (ROOT / "07_value" / "7.4_budget.md").read_text(encoding="utf-8")
+        evidence = (ROOT / "13_appendix" / "evidence_index.md").read_text(
+            encoding="utf-8"
+        )
+
+        self.assertIn("9 个月以上", body)
+        self.assertIn("约 90 天", body)
+        self.assertNotIn("正文只采用“通常需数月且供应商方案更快”的方向结论", evidence)
+
+    def test_python_caches_are_ignored(self):
+        text = (ROOT / ".gitignore").read_text(encoding="utf-8")
+
+        self.assertIn("__pycache__/", text)
+        self.assertIn("*.py[cod]", text)
+
 
 if __name__ == "__main__":
     unittest.main()
