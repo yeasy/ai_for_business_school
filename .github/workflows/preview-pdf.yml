@@ -1,4 +1,4 @@
-name: Update Preview PDF
+name: Update Preview Publications
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 permissions: {}
 
 concurrency:
-  group: preview-pdf
+  group: preview-publications
   cancel-in-progress: true
 
 jobs:
@@ -29,6 +29,7 @@ jobs:
           python3 check_project_rules.py .
 
       - name: Install Chrome
+        id: setupchrome
         uses: browser-actions/setup-chrome@2e1d749697dd1612b833dba4a722266286fbefcd # v2.1.2
         with:
           chrome-version: stable
@@ -53,12 +54,40 @@ jobs:
           install -m 0755 "$RUNNER_TEMP/mdpress" "$RUNNER_TEMP/bin/mdpress"
           echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
 
-      - name: Build preview PDF
+      - name: Install verified Pandoc 3.5
+        env:
+          PANDOC_VERSION: "3.5"
+          PANDOC_SHA256: "4f41d817d262ef3d17953a3e6e0fefddb971aa4f2f121544a9a86db449d945e1"
+        run: |
+          package="$RUNNER_TEMP/pandoc-${PANDOC_VERSION}-1-amd64.deb"
+          curl -fsSL --retry 3 \
+            "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-1-amd64.deb" \
+            -o "$package"
+          echo "${PANDOC_SHA256}  $package" | sha256sum -c -
+          sudo dpkg -i "$package"
+          pandoc --version | head -1
+
+      - name: Install locked Mermaid CLI
+        run: |
+          PUPPETEER_SKIP_DOWNLOAD=true npm ci --prefix tools/mermaid --ignore-scripts
+          echo "$GITHUB_WORKSPACE/tools/mermaid/node_modules/.bin" >> "$GITHUB_PATH"
+
+      - name: Build preview PDF and HTML
+        env:
+          CHROME_BIN: ${{ steps.setupchrome.outputs.chrome-path }}
         run: |
           mkdir -p dist
           mdpress build --format pdf --output dist/ai-for-business-school.pdf
+          python3 tools/render_mermaid.py \
+            --book-dir . \
+            --svg-out "$RUNNER_TEMP/mermaid-svg"
+          python3 tools/build_html_reader.py \
+            --book-dir . \
+            --title "商学院 AI 必修课：企业如何迎接智能体浪潮" \
+            --svg-dir "$RUNNER_TEMP/mermaid-svg" \
+            --out dist/ai-for-business-school.html
 
-      - name: Verify preview artifact
+      - name: Verify preview artifacts
         run: |
           title=$(python3 - <<'PY'
           import re
@@ -73,6 +102,8 @@ jobs:
           python3 tools/verify_artifacts.py \
             --title "$title" \
             --pdf dist/ai-for-business-school.pdf \
+            --html dist/ai-for-business-school.html \
+            --source-root . \
             --checksums dist/SHA256SUMS
           (cd dist && sha256sum -c SHA256SUMS)
 
@@ -103,7 +134,7 @@ jobs:
       - name: Write release notes
         run: |
           cat > dist/release-notes.md <<EOF
-          Auto-updated preview PDF from \`${GITHUB_SHA::7}\`.
+          Auto-updated preview PDF and HTML reader from \`${GITHUB_SHA::7}\`.
 
           - Branch: \`${GITHUB_REF_NAME}\`
           - Commit: https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}
@@ -130,12 +161,12 @@ jobs:
         run: |
           if gh release view preview-pdf >/dev/null 2>&1; then
             gh release edit preview-pdf \
-              --title "Latest Preview PDF" \
+              --title "Latest Preview Publications" \
               --notes-file dist/release-notes.md \
               --prerelease
           else
             gh release create preview-pdf \
-              --title "Latest Preview PDF" \
+              --title "Latest Preview Publications" \
               --notes-file dist/release-notes.md \
               --prerelease \
               --latest=false \
@@ -146,5 +177,6 @@ jobs:
         run: |
           gh release upload preview-pdf \
             dist/ai-for-business-school.pdf \
+            dist/ai-for-business-school.html \
             dist/SHA256SUMS \
             --clobber

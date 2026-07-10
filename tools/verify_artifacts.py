@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify a built PDF and write a portable SHA-256 manifest."""
+"""Verify the published PDF/HTML pair and write a portable SHA-256 manifest."""
 
 from __future__ import annotations
 
@@ -63,6 +63,76 @@ def verify_pdf(path: Path, expected_title: str) -> None:
         )
 
 
+def count_summary_mermaid_blocks(source_root: Path) -> int:
+    """Count Mermaid fences in the Markdown files published by SUMMARY.md."""
+
+    source_root = source_root.resolve()
+    summary = source_root / "SUMMARY.md"
+    require_file(summary)
+    paths: list[Path] = []
+    seen: set[Path] = set()
+    for match in re.finditer(r"(?m)^\s*[-*]\s+\[[^]]*\]\(([^)]+)\)", summary.read_text(encoding="utf-8")):
+        relative = match.group(1).split("#", 1)[0].strip()
+        if not relative.endswith(".md"):
+            continue
+        path = (source_root / relative).resolve()
+        if source_root not in path.parents and path != source_root:
+            fail(f"SUMMARY entry escapes source root: {relative}")
+        if path not in seen:
+            require_file(path)
+            seen.add(path)
+            paths.append(path)
+
+    return sum(
+        len(
+            re.findall(
+                r"(?m)^[ \t]*```mermaid[ \t]*$",
+                path.read_text(encoding="utf-8"),
+            )
+        )
+        for path in paths
+    )
+
+
+def verify_html(
+    path: Path,
+    expected_title: str,
+    *,
+    expected_mermaid_count: int,
+) -> None:
+    require_file(path)
+    text = path.read_text(encoding="utf-8")
+    title_match = re.search(
+        r"<title(?:\s[^>]*)?>(.*?)</title>", text, re.IGNORECASE | re.DOTALL
+    )
+    actual_title = normalized_title(title_match.group(1)) if title_match else ""
+    expected = normalized_title(expected_title)
+    if actual_title != expected:
+        fail(f"{path} title mismatch: expected {expected_title!r}, got {actual_title!r}")
+
+    placeholder = re.search(
+        r"MERMAIDZZ\d+ZZ|PGBKZZ|"
+        r"<pre\b[^>]*class=[\"'][^\"']*\bdiagram-fallback\b[^\"']*[\"'][^>]*>",
+        text,
+        re.IGNORECASE,
+    )
+    if placeholder:
+        fail(f"{path} contains unresolved reader placeholder: {placeholder.group(0)}")
+
+    figures = re.findall(
+        r"<figure\b[^>]*\bclass=[\"'][^\"']*\bdiagram\b[^\"']*[\"'][^>]*>.*?</figure>",
+        text,
+        re.IGNORECASE | re.DOTALL,
+    )
+    if any("<svg" not in figure.lower() for figure in figures):
+        fail(f"{path} contains a Mermaid figure without an inline SVG")
+    if len(figures) != expected_mermaid_count:
+        fail(
+            f"{path} Mermaid count mismatch: expected {expected_mermaid_count}, "
+            f"got {len(figures)}"
+        )
+
+
 def write_checksums(paths: list[Path], destination: Path) -> None:
     destination.parent.mkdir(parents=True, exist_ok=True)
     lines: list[str] = []
@@ -78,12 +148,21 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--title", required=True)
     parser.add_argument("--pdf", type=Path, required=True)
+    parser.add_argument("--html", type=Path, required=True)
+    parser.add_argument("--source-root", type=Path, required=True)
     parser.add_argument("--checksums", type=Path, required=True)
     args = parser.parse_args()
 
     verify_pdf(args.pdf, args.title)
-    write_checksums([args.pdf], args.checksums)
-    print(f"verified artifact: {args.pdf}")
+    expected_mermaid_count = count_summary_mermaid_blocks(args.source_root)
+    verify_html(
+        args.html,
+        args.title,
+        expected_mermaid_count=expected_mermaid_count,
+    )
+    write_checksums([args.pdf, args.html], args.checksums)
+    print(f"verified artifacts: {args.pdf}, {args.html}")
+    print(f"verified Mermaid diagrams: {expected_mermaid_count}")
     print(f"wrote checksums: {args.checksums}")
     return 0
 

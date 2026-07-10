@@ -87,11 +87,33 @@ class ProjectRulesTests(unittest.TestCase):
         self.assertIn("python3 ../format_checker.py .", text)
         self.assertIn("python3 ../validate_codeblocks.py .", text)
 
+    def test_contributing_documents_the_pdf_and_html_publication_checks(self):
+        text = (ROOT / "CONTRIBUTING.md").read_text(encoding="utf-8")
+        self.assertIn("npm ci --prefix tools/mermaid --ignore-scripts", text)
+        self.assertIn("tools/render_mermaid.py", text)
+        self.assertIn("tools/build_html_reader.py", text)
+        self.assertIn("--html /tmp/ai-for-business-school.html", text)
+        self.assertIn("--source-root .", text)
+
     def test_moderna_metric_matches_the_primary_source(self):
         for relative in ("11_org_talent/summary.md", "13_appendix/discussion.md"):
             text = (ROOT / relative).read_text(encoding="utf-8")
             self.assertNotIn("750 多个", text, relative)
             self.assertIn("750 个", text, relative)
+
+    def test_references_do_not_call_linked_primary_sources_unlinked(self):
+        text = (ROOT / "13_appendix" / "references.md").read_text(encoding="utf-8")
+        self.assertIn("正文已为 SignalFire 报告", text)
+        self.assertIn("少数材料仍没有稳定的一手链接", text)
+        claims = [
+            paragraph
+            for paragraph in text.split("\n\n")
+            if "正文未附" in paragraph or "未附外部链接" in paragraph
+        ]
+        for claim in claims:
+            self.assertNotIn("SignalFire", claim)
+            self.assertNotIn("ADP", claim)
+            self.assertNotIn("BCG", claim)
 
 
 if __name__ == "__main__":

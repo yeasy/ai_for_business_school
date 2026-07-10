@@ -1,3 +1,4 @@
+import json
 import re
 import unittest
 from pathlib import Path
@@ -59,6 +60,7 @@ class ReleaseWorkflowTests(unittest.TestCase):
             text = self.workflow_text(name)
             self.assertIn("MDPRESS_SHA256", text, name)
             self.assertIn("sha256sum -c -", text, name)
+            self.assertIn("PANDOC_SHA256", text, name)
             self.assertIn("tools/verify_artifacts.py", text, name)
             self.assertIn("SHA256SUMS", text, name)
             self.assertNotIn("continue-on-error: true", text, name)
@@ -67,6 +69,45 @@ class ReleaseWorkflowTests(unittest.TestCase):
             "actions/attest-build-provenance@0f67c3f4856b2e3261c31976d6725780e5e4c373 # v4.1.1",
             auto,
         )
+
+    def test_mermaid_dependency_is_exact_and_lockfile_backed(self):
+        package_path = ROOT / "tools" / "mermaid" / "package.json"
+        lock_path = ROOT / "tools" / "mermaid" / "package-lock.json"
+        self.assertTrue(package_path.is_file(), package_path)
+        self.assertTrue(lock_path.is_file(), lock_path)
+
+        package = json.loads(package_path.read_text(encoding="utf-8"))
+        lock = json.loads(lock_path.read_text(encoding="utf-8"))
+        expected = "10.9.1"
+        self.assertEqual(package["dependencies"]["@mermaid-js/mermaid-cli"], expected)
+        self.assertGreaterEqual(lock["lockfileVersion"], 3)
+        self.assertEqual(
+            lock["packages"][""]["dependencies"]["@mermaid-js/mermaid-cli"],
+            expected,
+        )
+
+    def test_every_publication_workflow_builds_and_verifies_pdf_and_html(self):
+        for name in ("ci.yaml", "preview-pdf.yml", "auto-release.yml"):
+            text = self.workflow_text(name)
+            self.assertIn("npm ci --prefix tools/mermaid --ignore-scripts", text, name)
+            self.assertIn("tools/mermaid/node_modules/.bin", text, name)
+            self.assertIn("tools/render_mermaid.py", text, name)
+            self.assertIn("tools/build_html_reader.py", text, name)
+            self.assertIn("--pdf", text, name)
+            self.assertIn("--html", text, name)
+            self.assertIn("--source-root .", text, name)
+            self.assertRegex(text, r"ai-for-business-school[^\n\"']*\.html")
+
+    def test_published_bundles_and_formal_attestation_cover_all_artifacts(self):
+        ci = self.workflow_text("ci.yaml")
+        preview = self.workflow_text("preview-pdf.yml")
+        auto = self.workflow_text("auto-release.yml")
+
+        self.assertIn("dist/ai-for-business-school.html", ci)
+        self.assertIn("dist/ai-for-business-school.html", preview)
+        self.assertRegex(auto, r"dist/ai-for-business-school-\*\.html")
+        self.assertRegex(auto, r"(?s)subject-path:.*?\.pdf.*?\.html.*?SHA256SUMS")
+        self.assertRegex(auto, r"(?s)files:.*?\.pdf.*?\.html.*?SHA256SUMS")
 
     def test_dependabot_configuration_and_guarded_automerge_exist(self):
         config = ROOT / ".github" / "dependabot.yml"
