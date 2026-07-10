@@ -28,6 +28,7 @@ book.pdf
 # Node（如使用旧版 gitbook-cli）
 node_modules/
 package-lock.json
+!tools/mermaid/package-lock.json
 
 # Obsidian 编辑器工作文件
 .obsidian/

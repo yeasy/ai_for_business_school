@@ -17,7 +17,21 @@
 ```bash
 python3 -m unittest discover -s tests -p 'test_*.py' -v
 python3 check_project_rules.py .
+PUPPETEER_SKIP_DOWNLOAD=true npm ci --prefix tools/mermaid --ignore-scripts
+export PATH="$PWD/tools/mermaid/node_modules/.bin:$PATH"
+python3 tools/render_mermaid.py --book-dir . --svg-out /tmp/ai-for-business-school-mermaid
+python3 tools/build_html_reader.py \
+  --book-dir . \
+  --title "商学院 AI 必修课：企业如何迎接智能体浪潮" \
+  --svg-dir /tmp/ai-for-business-school-mermaid \
+  --out /tmp/ai-for-business-school.html
 mdpress build --format pdf --output /tmp/ai-for-business-school.pdf
+python3 tools/verify_artifacts.py \
+  --title "商学院 AI 必修课：企业如何迎接智能体浪潮" \
+  --pdf /tmp/ai-for-business-school.pdf \
+  --html /tmp/ai-for-business-school.html \
+  --source-root . \
+  --checksums /tmp/SHA256SUMS
 ```
 
 如果本仓库位于 `books` 协调工作区内，再运行协调层校验器：
@@ -27,4 +41,4 @@ python3 ../format_checker.py .
 python3 ../validate_codeblocks.py .
 ```
 
-最后用 `git diff --check` 检查空白错误，并人工打开生成的 PDF，抽查目录、中文字体、表格、图片和页尾是否完整。
+最后用 `git diff --check` 检查空白错误，并人工打开生成的 PDF 与 HTML，抽查目录、中文字体、表格、图片、Mermaid 图和翻页导航是否完整。
