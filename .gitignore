@@ -30,6 +30,10 @@ node_modules/
 package-lock.json
 !tools/mermaid/package-lock.json
 
+# Python
+__pycache__/
+*.py[cod]
+
 # Obsidian 编辑器工作文件
 .obsidian/
 *.canvas

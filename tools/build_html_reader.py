@@ -17,7 +17,7 @@ def parse_summary(book_dir):
     items, seen = [], set()
     with open(os.path.join(book_dir, "SUMMARY.md"), encoding="utf-8") as f:
         for line in f:
-            m = re.match(r'^##\s+(.+?)\s*$', line)
+            m = re.match(r'^#{2,3}\s+(.+?)\s*$', line)
             if m: items.append(("part", m.group(1))); continue
             m = re.match(r'^(\s*)[-*]\s+\[(.*?)\]\(([^)]+?)\)', line)
             if m:
