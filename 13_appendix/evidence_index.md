@@ -44,7 +44,7 @@
 | 吉利西安“超级智能黑灯工厂”认证状态 | 企业命名，**非 WEF 认证灯塔工厂** | 证否性结论 | WEF 灯塔网络名单对照 | ✅ | [8.1](../08_cases/8.1_manufacturing.md) |
 | 海尔卡奥斯 | 在已节能工厂基础上再降约 5% 能耗 | 参照系是**已完成节能改造**的工厂，“在拧过的毛巾上再拧水”；模式为数据采集→知识库→细分模型→智能体的闭环 | [《青岛日报》2025 年 7 月 11 日报道](https://epaper.guanhai.com.cn/conpaper/qdrb/resfile/2025-07-11/04/qdrb2025071104.pdf) | ✅ | [8.1](../08_cases/8.1_manufacturing.md) |
 | 西门子工业 Copilot | 蒂森克虏伯自动化工程自 2025 年起全球产线规模化采用；宣传“效率提升最高可达 50%” | “up to 50%” 是**厂商目标与愿景**，不是第三方实测均值，引用不能省掉“最高可达” | [西门子官方公告](https://press.siemens.com/global/en/pressrelease/siemens-industrial-copilot-expanded-adopted-thyssenkrupp) | ✅ | [8.1](../08_cases/8.1_manufacturing.md) |
-| 广州地铁 × 中国移动 | 施工智能监测覆盖约 480 公里、节省人力 200 余人、落地金额超 6600 万元 | 政府文件口径；“落地金额”是项目金额，不是收益额 | [广州市工业和信息化局《2025 年广州市“人工智能+”典型案例集》](https://gxj.gz.gov.cn/attachment/7/7952/7952889/10620000.pdf) | ✅ | [8.1](../08_cases/8.1_manufacturing.md) |
+| 广州地铁 × 中国移动 | 施工智能监测覆盖约 480 公里、节省人力 200 余人、落地金额超 6600 万元 | 政府文件口径；“落地金额”是项目金额，不是收益额 | [广州市工业和信息化局《2025 年广州市“人工智能+”典型案例集》](https://gxj.gz.gov.cn/attachment/7/7953/7953403/10620000.pdf) | ✅ | [8.1](../08_cases/8.1_manufacturing.md) |
 
 ### 行业案例：金融
 
