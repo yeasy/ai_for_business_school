@@ -1,8 +1,8 @@
-# Table of contents
+# Summary
 
 * [前言](README.md)
 
-## 第一部分 认知篇：看懂智能体浪潮
+### 第一部分 认知篇：看懂智能体浪潮
 
 * [第一章 人工智能的商业本质](01_essence/README.md)
   * [1.1 三级跳：会看、会写、会干活](01_essence/1.1_three_leaps.md)
@@ -23,7 +23,7 @@
   * [3.4 先发优势与不对称风险](03_why_now/3.4_first_mover.md)
   * [本章小结](03_why_now/summary.md)
 
-## 第二部分 原理篇：管理者需要懂的技术
+### 第二部分 原理篇：管理者需要懂的技术
 
 * [第四章 大模型的能力与局限](04_llm/README.md)
   * [4.1 从预测下一个词到涌现能力](04_llm/4.1_next_token.md)
@@ -47,7 +47,7 @@
   * [6.5 评估与运维：智能体的质检线](06_ecosystem/6.5_evaluation.md)
   * [本章小结](06_ecosystem/summary.md)
 
-## 第三部分 落地篇：从案例看真相
+### 第三部分 落地篇：从案例看真相
 
 * [第七章 算清这笔账：价值与成本](07_value/README.md)
   * [7.1 价值迁移：执行变廉价之后](07_value/7.1_value_shift.md)
@@ -73,7 +73,7 @@
   * [9.6 止损的纪律：退出信号与复盘沉淀](09_landing/9.6_exit_discipline.md)
   * [本章小结](09_landing/summary.md)
 
-## 第四部分 战略篇：领导者的决策
+### 第四部分 战略篇：领导者的决策
 
 * [第十章 战略选择与投资节奏](10_strategy/README.md)
   * [10.1 AI 的第一个用户，是你自己](10_strategy/10.1_first_user.md)
@@ -96,12 +96,14 @@
   * [12.4 走向智能原生企业](12_governance/12.4_ai_native.md)
   * [本章小结](12_governance/summary.md)
 
-***
+----
 
 * [结语](epilogue.md)
 * [附录](13_appendix/README.md)
   * [术语表](13_appendix/glossary.md)
   * [决策工具与框架速查](13_appendix/toolkit.md)
+  * [量化案例练习：把 AI 项目算成可复核的账](13_appendix/quantitative_cases.md)
+  * [量化案例答案与评分要点](13_appendix/quantitative_case_answers.md)
   * [开源项目与平台清单](13_appendix/projects.md)
   * [数据与案例证据索引](13_appendix/evidence_index.md)
   * [分章讨论题](13_appendix/discussion.md)
