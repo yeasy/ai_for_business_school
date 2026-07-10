@@ -115,6 +115,17 @@ class ProjectRulesTests(unittest.TestCase):
             self.assertNotIn("ADP", claim)
             self.assertNotIn("BCG", claim)
 
+    def test_guangzhou_ai_case_uses_the_accessible_official_pdf(self):
+        official = "https://gxj.gz.gov.cn/attachment/7/7953/7953403/10620000.pdf"
+        stale = "https://gxj.gz.gov.cn/attachment/7/7952/7952889/10620000.pdf"
+        for relative in (
+            "08_cases/8.1_manufacturing.md",
+            "13_appendix/evidence_index.md",
+        ):
+            text = (ROOT / relative).read_text(encoding="utf-8")
+            self.assertIn(official, text, relative)
+            self.assertNotIn(stale, text, relative)
+
 
 if __name__ == "__main__":
     unittest.main()
