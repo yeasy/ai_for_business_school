@@ -70,8 +70,6 @@ jobs:
           echo "$GITHUB_WORKSPACE/tools/mermaid/node_modules/.bin" >> "$GITHUB_PATH"
 
       - name: Build PDF and HTML
-        env:
-          CHROME_BIN: ${{ steps.setupchrome.outputs.chrome-path }}
         run: |
           mkdir -p dist
           mdpress build --format pdf --output dist/ai-for-business-school.pdf
