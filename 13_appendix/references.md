@@ -15,6 +15,9 @@
 - 【机构】斯坦福大学以人为本人工智能研究院（HAI）：《AI Index Report 2025》，2025 年。<https://hai.stanford.edu/ai-index/2025-ai-index-report>
 - 【机构】Epoch AI：《LLM inference price trends》（数据洞察），2025 年。<https://epoch.ai/data-insights/llm-inference-price-trends>
 - 【机构】AAAI：《Presidential Panel on the Future of AI Research》（2025 年研究者调查），2025 年。<https://aaai.org/about-aaai/presidential-panel-on-the-future-of-ai-research/>
+- 【官方】OpenAI：《Introducing SWE-bench Verified》（真实代码修复基准），2024 年。<https://openai.com/index/introducing-swe-bench-verified/>
+- 【官方】Anthropic：《Introducing Claude 4》（SWE-bench Verified 约 70%＋、Claude Code 正式可用），2025 年。<https://www.anthropic.com/news/claude-4>
+- 【官方】OpenAI：《Introducing Operator》（自主操作浏览器的智能体研究预览），2025 年。<https://openai.com/index/introducing-operator/>
 
 ### 第二章 智能体：能交付的数字员工
 
@@ -29,6 +32,8 @@
 - 【官方】OpenAI：《Ending the Capability Overhang》（“能力悬垂”报告），2026 年。<https://openai.com/index/how-countries-can-end-the-capability-overhang/>
 - 【媒体】Axios：达沃斯 OpenAI“能力悬垂”报道，2026 年。<https://www.axios.com/2026/01/19/davos-openai-warns-capability-overhang>
 - 【机构】ARC Prize：《OpenAI o3 Breakthrough High Score on ARC-AGI-Pub》（o3 高算力档成本测算），2024 年。<https://arcprize.org/blog/oai-o3-pub-breakthrough>
+- 【机构】METR：《Measuring AI Ability to Complete Long Tasks》（任务时间跨度约每七个月翻番），2025 年。<https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/>
+- 【机构】METR：《Time Horizon 1.1》（翻倍周期更新，近两年约三个月），2026 年。<https://metr.org/blog/2026-1-29-time-horizon-1-1/>
 
 ### 第四章 大模型的能力与局限
 
@@ -58,6 +63,11 @@
 - 【机构】OWASP GenAI Security Project：《OWASP Top 10 for LLM Applications》（2025 版）。<https://genai.owasp.org/llm-top-10/>
 - 【机构】Invariant Labs：《MCP Security Notification: Tool Poisoning Attacks》（安全研究博客），2025 年。<https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks>
 - 【媒体】Willison, S.：《The lethal trifecta for AI agents》（个人技术博客），2025 年。<https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/>
+- 【论文】Shojaee, P. 等（Apple）：《The Illusion of Thinking》（推理模型高复杂度下准确率坍塌，有争议），2025 年。<https://machinelearning.apple.com/research/illusion-of-thinking>
+- 【论文】Lawsen, A.：《Comment on "The Illusion of Thinking"》（对上文的反方质疑），arXiv:2506.09250，2025 年。<https://arxiv.org/abs/2506.09250>
+- 【媒体】Fortune：《What is Jevons paradox? … Satya Nadella … DeepSeek》（纳德拉引杰文斯悖论），2025 年。<https://fortune.com/2025/01/27/microsoft-ceo-satya-nadella-deepseek-optimism-jevons-paradox/>
+- 【官方】Google Cloud：《Announcing Agent Payments Protocol (AP2)》，2025 年。<https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol>
+- 【官方】Stripe：《Stripe and OpenAI bring Instant Checkout and the Agentic Commerce Protocol to businesses》，2025 年。<https://stripe.com/newsroom/news/stripe-openai-instant-checkout>
 
 ### 第六章 平台与生态：开源框架与商业平台
 
@@ -116,6 +126,7 @@
 - 【论文】Brynjolfsson, E., Rock, D. & Syverson, C.：《The Productivity J-Curve: How Intangibles Complement General Purpose Technologies》，American Economic Journal: Macroeconomics，2021 年。<https://www.aeaweb.org/articles?id=10.1257/mac.20180386>
 - 【机构】Gartner：《Gartner Hype Cycle Identifies Top AI Innovations in 2025》（新闻稿），2025 年。<https://www.gartner.com/en/newsroom/press-releases/2025-08-05-gartner-hype-cycle-identifies-top-ai-innovations-in-2025>
 - 【媒体】Fortune：MIT 报告报道（“约 95% 的企业生成式 AI 试点未形成可衡量的利润影响”），2025 年。<https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/>
+- 【机构】Gartner：《Gartner Predicts that Guardian Agents Will Capture 10-15% of the Agentic AI Market by 2030》（新闻稿），2025 年。<https://www.gartner.com/en/newsroom/press-releases/2025-06-11-gartner-predicts-that-guardian-agents-will-capture-10-15-percent-of-the-agentic-ai-market-by-2030>
 
 ### 第十章 战略选择与投资节奏
 
@@ -129,5 +140,11 @@
 - 【政策】欧盟理事会：《Artificial intelligence: Council and Parliament agree to simplify and streamline rules》（“数字综合修正案”政治协议新闻稿），2026 年。<https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/>
 - 【机构】美国国家标准与技术研究院（NIST）：《AI Risk Management Framework》（AI RMF 1.0），2023 年。<https://www.nist.gov/itl/ai-risk-management-framework>
 - 【机构】国际标准化组织：《ISO/IEC 42001:2023 — Artificial intelligence management system》，2023 年。<https://www.iso.org/standard/81230.html>
+- 【政策】国家发展和改革委员会：《加速布局未来产业 打造经济发展新增量》（具身智能列入“十五五”六大未来产业），2025 年。<https://www.ndrc.gov.cn/wsdwhfz/202512/t20251204_1402236.html>
+- 【媒体】新华网：《首个人形机器人与具身智能标准体系发布》，2026 年。<https://www.news.cn/tech/20260302/3d0ff411d1d94995b4f0277d29e58e19/c.html>
+- 【机构】国务院发展研究中心：《中国发展报告 2025》（具身智能市场规模预测，经新华网转发），2025 年。<http://www.xinhuanet.com/20251001/a9a32ba0c5c0473e928dfd93e89372e9/c.html>
+- 【媒体】TMTPost：中国占全球人形机器人出货约九成报道（引摩根士丹利、Omdia 等），2026 年。<https://en.tmtpost.com/post/8007520>
+- 【官方】BMW Group：《BMW Group advances the use of physical AI in production with Figure 03 project in Spartanburg》，2026 年。<https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg>
+- 【机构】Gartner：《Gartner Predicts Fewer Than 20 Companies Will Scale Humanoid Robots for Manufacturing and Supply Chain to Production Stage by 2028》（新闻稿），2026 年。<https://www.gartner.com/en/newsroom/press-releases/2026-01-21-gartner-predicts-fewer-than-20-companies-will-scale-humanoid-robots-for-manufacturing-and-supply-chain-to-production-stage-by-2028>
 
 少数材料仍没有稳定的一手链接，或只能追溯到二手报道、厂商披露与作者实测，例如 MIT NANDA 报告的部分访谈口径、任务级成本测算及部分案例数据。这些缺口、来源层级与引用限制均已在[数据与案例证据索引](evidence_index.md)逐项标明，此处不再重复。
