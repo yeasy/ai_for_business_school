@@ -5,7 +5,7 @@
 book:
   title: "商学院 AI 必修课：企业如何迎接智能体浪潮"
   author: "杨保华"
-  version: "1.0.0"
+  version: "1.1.0"
   language: "zh-CN"
   cover:
     background: "#0f2942"
