@@ -55,6 +55,7 @@
   * [7.3 四类成本对三类收益](07_value/7.3_cost_benefit.md)
   * [7.4 预算量级：试点、扩展与规模化各花多少钱](07_value/7.4_budget.md)
   * [7.5 真机会与伪需求](07_value/7.5_real_vs_fake.md)
+  * [7.6 用对形态：多数需求要的不是智能体，而是自动化](07_value/7.6_agent_or_automation.md)
   * [本章小结](07_value/summary.md)
 * [第八章 行业落地案例深读](08_cases/README.md)
   * [8.1 制造与基建：从质检到灯塔工厂](08_cases/8.1_manufacturing.md)
