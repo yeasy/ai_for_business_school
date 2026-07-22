@@ -60,7 +60,7 @@
 
 **MCP**（Model Context Protocol，模型上下文协议）——Anthropic 2024 年 11 月开源、2025 年底捐赠 Linux 基金会的开放协议，为智能体连接工具与数据源定义标准接口，常被称为“AI 应用的 USB-C”；一次封装、处处可用，把“M×N”的集成矩阵坍缩成“M+N”，已是业界事实标准。详见 [5.5](../05_agent_tech/5.5_mcp_a2a.md)。
 
-**A2A**（Agent2Agent，智能体间协作协议）——Google 2025 年 4 月发布、同年捐赠 Linux 基金会的开放协议，规定智能体之间如何互相发现（通过“智能体名片”Agent Card）、委托任务与跟踪进度。与 MCP 一纵一横分工：MCP 纵向接能力，A2A 横向做协作；成熟度与普及度尚不及 MCP。详见 [5.5](../05_agent_tech/5.5_mcp_a2a.md)。
+**A2A**（Agent2Agent，智能体间协作协议）——Google 2025 年 4 月发布、同年捐赠 Linux 基金会的开放协议，规定智能体之间如何互相发现（通过“智能体名片”Agent Card）、委托任务与跟踪进度。与 MCP 一纵一横分工：MCP 纵向接能力，A2A 横向做协作。规范已于 2026 年 3 月发布 v1.0（客户端不再读顶层 `url`，改从 `supportedInterfaces` 选绑定），但跨企业协作的实际案例与普及度仍不及 MCP。详见 [5.5](../05_agent_tech/5.5_mcp_a2a.md)。
 
 ### 安全与评估运维
 
