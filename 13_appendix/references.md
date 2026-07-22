@@ -67,6 +67,7 @@
 - 【论文】Lawsen, A.：《Comment on "The Illusion of Thinking"》（对上文的反方质疑），arXiv:2506.09250，2025 年。<https://arxiv.org/abs/2506.09250>
 - 【媒体】Fortune：《What is Jevons paradox? … Satya Nadella … DeepSeek》（纳德拉引杰文斯悖论），2025 年。<https://fortune.com/2025/01/27/microsoft-ceo-satya-nadella-deepseek-optimism-jevons-paradox/>
 - 【官方】Google Cloud：《Announcing Agent Payments Protocol (AP2)》，2025 年。<https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol>
+- 【官方】Worldline：《Worldline and ING complete a live end-to-end European agentic payment in production》（与万事达合作的生产环境智能体支付新闻稿），2026 年。<https://worldline.com/en/home/top-navigation/media-relations/press-release/pr-2026_06_02_01>
 - 【官方】Stripe：《Stripe and OpenAI bring Instant Checkout and the Agentic Commerce Protocol to businesses》，2025 年。<https://stripe.com/newsroom/news/stripe-openai-instant-checkout>
 
 ### 第六章 平台与生态：开源框架与商业平台
@@ -112,6 +113,7 @@
 - 【机构】Gartner：《Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027》（新闻稿），2025 年。<https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027>
 - 【机构】Gartner：《Gartner Predicts AI Coding Costs Will Surpass Average Developer Salary by 2028》（新闻稿），2026 年。<https://www.gartner.com/en/newsroom/press-releases/2026-06-24-gartner-predicts-ai-coding-costs-will-surpass-average-developer-salary-by-2028-as-token-consumption-surges>
 - 【媒体】The Next Web：《Microsoft's Claude Code retreat over AI cost》（微软部门限用第三方 AI 工具报道），2026 年。<https://thenextweb.com/news/microsoft-claude-code-retreat-ai-cost>
+- 【官方】Intercom：《Fin AI Agent outcomes》（Fin 按结果计费的官方定价文档，2026 年年中访问）。<https://www.intercom.com/help/en/articles/8205718-fin-ai-agent-outcomes>
 
 ### 第八章 行业落地案例深读
 
@@ -126,11 +128,16 @@
 - 【论文】Brynjolfsson, E., Rock, D. & Syverson, C.：《The Productivity J-Curve: How Intangibles Complement General Purpose Technologies》，American Economic Journal: Macroeconomics，2021 年。<https://www.aeaweb.org/articles?id=10.1257/mac.20180386>
 - 【机构】Gartner：《Gartner Hype Cycle Identifies Top AI Innovations in 2025》（新闻稿），2025 年。<https://www.gartner.com/en/newsroom/press-releases/2025-08-05-gartner-hype-cycle-identifies-top-ai-innovations-in-2025>
 - 【媒体】Fortune：MIT 报告报道（“约 95% 的企业生成式 AI 试点未形成可衡量的利润影响”），2025 年。<https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/>
+- 【机构】PwC：《PwC 2026 Global CEO Survey》（第 29 期全球 CEO 调研新闻稿），2026 年。<https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-global-ceo-survey.html>
 - 【机构】Gartner：《Gartner Predicts that Guardian Agents Will Capture 10-15% of the Agentic AI Market by 2030》（新闻稿），2025 年。<https://www.gartner.com/en/newsroom/press-releases/2025-06-11-gartner-predicts-that-guardian-agents-will-capture-10-15-percent-of-the-agentic-ai-market-by-2030>
 
 ### 第十章 战略选择与投资节奏
 
 - 【政策】美国证券交易委员会（SEC）：对 Presto Automation 的行政执法文件（Administrative Proceeding, Release No. 33-11352），2025 年。<https://www.sec.gov/enforcement-litigation/administrative-proceedings/33-11352-s>
+
+### 第十一章 组织与人才：升级而非取代
+
+- 【论文】Dell'Acqua, F., Ayoubi, C., Lifshitz, H., Sadun, R., Mollick, E., Mollick, L., Han, Y., Goldman, J., Nair, H., Taub, S. & Lakhani, K. R.：《The Cybernetic Teammate: A Field Experiment on Generative AI Reshaping Teamwork and Expertise》，NBER Working Paper 33641，2025 年。<https://www.nber.org/papers/w33641>
 
 ### 第十二章 治理、合规与未来
 
