@@ -114,6 +114,7 @@
 - 【机构】Gartner：《Gartner Predicts AI Coding Costs Will Surpass Average Developer Salary by 2028》（新闻稿），2026 年。<https://www.gartner.com/en/newsroom/press-releases/2026-06-24-gartner-predicts-ai-coding-costs-will-surpass-average-developer-salary-by-2028-as-token-consumption-surges>
 - 【媒体】The Next Web：《Microsoft's Claude Code retreat over AI cost》（微软部门限用第三方 AI 工具报道），2026 年。<https://thenextweb.com/news/microsoft-claude-code-retreat-ai-cost>
 - 【官方】Intercom：《Fin AI Agent outcomes》（Fin 按结果计费的官方定价文档，2026 年年中访问）。<https://www.intercom.com/help/en/articles/8205718-fin-ai-agent-outcomes>
+- 【政策】北京市发展和改革委员会等四部门：《北京市加快智能体引领发展若干措施》（京发改〔2026〕1185 号），2026 年。<https://www.beijing.gov.cn/zhengce/zhengcefagui/202607/t20260723_4781085.html>
 
 ### 第八章 行业落地案例深读
 
