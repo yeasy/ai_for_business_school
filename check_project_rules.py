@@ -12,6 +12,7 @@ from urllib.parse import unquote
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 NUMBERED_CHAPTER_RE = re.compile(r"^\d+\.\d+_.*\.md$")
 CONTENT_DIR_RE = re.compile(r"^\d{2}_")
+FENCE_RE = re.compile(r"^\s{0,3}(`{3,}|~{3,})")
 
 
 def _line_number(text: str, offset: int) -> int:
@@ -39,6 +40,30 @@ def _book_markdown(root: Path) -> list[Path]:
     return sorted(path for path in paths if path.is_file())
 
 
+
+def _unclosed_fences(rel: str, text: str) -> list[str]:
+    """Report fenced code blocks that are never closed (ported from the 13 sibling checkers)."""
+    issues: list[str] = []
+    stack: list[tuple[str, int, int]] = []
+    for line_no, line in enumerate(text.splitlines(), 1):
+        match = FENCE_RE.match(line)
+        if not match:
+            continue
+        marker = match.group(1)
+        char, length = marker[0], len(marker)
+        if not stack:
+            stack.append((char, length, line_no))
+            continue
+        open_char, open_len, _ = stack[-1]
+        if char == open_char and length >= open_len:
+            stack.pop()
+        else:
+            stack.append((char, length, line_no))
+    for _, _, line_no in stack:
+        issues.append(f"{rel}:{line_no}: unclosed fenced code block")
+    return issues
+
+
 def collect_issues(root: Path | str) -> list[str]:
     root = Path(root).resolve()
     issues: list[str] = []
@@ -57,6 +82,7 @@ def collect_issues(root: Path | str) -> list[str]:
             issues.append(f"{rel}: escaped bold syntax is not allowed")
         if ".gitbook/assets" in text:
             issues.append(f"{rel}: .gitbook/assets reference is not allowed")
+        issues.extend(_unclosed_fences(str(rel), text))
 
         if NUMBERED_CHAPTER_RE.match(path.name):
             first_heading = next(
