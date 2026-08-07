@@ -146,6 +146,8 @@
 - 【政策】国家互联网信息办公室：生成式人工智能服务备案与登记情况公告，2026 年。<https://www.cac.gov.cn/2026-03/17/c_1775482074695536.htm>
 - 【政策】欧盟：《人工智能法案》（Regulation (EU) 2024/1689），2024 年。<https://eur-lex.europa.eu/eli/reg/2024/1689/oj>
 - 【政策】欧盟理事会：《Artificial intelligence: Council and Parliament agree to simplify and streamline rules》（“数字综合修正案”政治协议新闻稿），2026 年。<https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/>
+- 【政策】欧盟委员会：《AI Omnibus enters into force》（“数字综合修正案”2026 年 7 月 27 日生效公告），2026 年。<https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force>
+- 【政策】欧盟委员会：《Transparency obligations under Article 50 AI Act》（第 50 条透明度义务官方问答，含 2026 年 12 月 2 日机器可读标识宽限期口径），2026 年。<https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act>
 - 【机构】美国国家标准与技术研究院（NIST）：《AI Risk Management Framework》（AI RMF 1.0），2023 年。<https://www.nist.gov/itl/ai-risk-management-framework>
 - 【机构】国际标准化组织：《ISO/IEC 42001:2023 — Artificial intelligence management system》，2023 年。<https://www.iso.org/standard/81230.html>
 - 【政策】国家发展和改革委员会：《加速布局未来产业 打造经济发展新增量》（具身智能列入“十五五”六大未来产业），2025 年。<https://www.ndrc.gov.cn/wsdwhfz/202512/t20251204_1402236.html>
