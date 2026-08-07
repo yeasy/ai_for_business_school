@@ -95,12 +95,12 @@
 - 【项目】Google ADK：<https://github.com/google/adk-python>
 - 【项目】Anthropic Claude Agent SDK：<https://github.com/anthropics/claude-agent-sdk-python>
 - 【项目】Salesforce Agentforce：<https://www.salesforce.com/agentforce/>
-- 【项目】Microsoft Copilot Studio：<https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio>
+- 【项目】Microsoft Copilot Studio：<https://www.microsoft.com/en-us/microsoft-365-copilot/microsoft-copilot-studio>
 - 【项目】Google Gemini Enterprise：<https://cloud.google.com/gemini-enterprise>
 - 【项目】AWS Bedrock AgentCore：<https://aws.amazon.com/bedrock/agentcore/>
 - 【项目】阿里云百炼：<https://www.aliyun.com/product/bailian>
 - 【项目】字节扣子（Coze）：<https://www.coze.cn>
-- 【项目】百度千帆：<https://cloud.baidu.com/product/qianfan>
+- 【项目】百度千帆：<https://cloud.baidu.com/product-s/qianfan_home>
 - 【项目】腾讯元器：<https://yuanqi.tencent.com>
 
 ### 第七章 算清这笔账：价值与成本

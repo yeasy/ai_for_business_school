@@ -12,7 +12,7 @@
 | CrewAI | 开源框架 | 以“角色班组”为范式的多智能体协作框架，隐喻贴近管理直觉、上手快 | 快速验证多角色分工的场景 | [GitHub](https://github.com/crewAIInc/crewAI)｜[官网](https://www.crewai.com) |
 | Microsoft Agent Framework | 开源框架 | AutoGen 与 Semantic Kernel 合流后的微软系智能体框架，2026 年 4 月发布 1.0 | .NET / Azure 技术栈的企业 | [GitHub](https://github.com/microsoft/agent-framework)｜[文档](https://learn.microsoft.com/en-us/agent-framework/overview/) |
 | OpenAI Agents SDK | 开源框架 | 轻量智能体框架，内建交接、护栏与追踪，与 OpenAI 模型及工具链衔接最顺 | 已锁定 OpenAI 系模型的团队 | [GitHub](https://github.com/openai/openai-agents-python)｜[文档](https://openai.github.io/openai-agents-python/) |
-| Dify | 开源框架（低代码） | 国产开源可视化低代码平台：模型接入、RAG、工作流做成拖拽画布，GitHub 星标超 10 万 | 业务部门做原型与轻量应用 | [GitHub](https://github.com/langgenius/dify)｜[官网](https://dify.ai) |
+| Dify | 开源框架（低代码） | 国产开源可视化低代码平台：模型接入、RAG、工作流做成拖拽画布，GitHub 星标超 15 万 | 业务部门做原型与轻量应用 | [GitHub](https://github.com/langgenius/dify)｜[官网](https://dify.ai) |
 | Coze Studio | 开源框架（低代码） | 字节扣子平台核心引擎，2025 年 7 月以 Apache 2.0 协议开源 | 零代码搭建与插件生态（商业侧见下表“扣子”） | [GitHub](https://github.com/coze-dev/coze-studio) |
 | LlamaIndex | 开源框架 | 专注数据接入与检索 | RAG 的数据侧工程 | [GitHub](https://github.com/run-llama/llama_index) |
 | Google ADK | 开源框架 | Google 的智能体开发套件，贴 Google 模型生态 | Google 云生态团队 | [GitHub](https://github.com/google/adk-python) |
@@ -26,12 +26,12 @@
 | 名称 | 类型 | 一句话定位 | 适用场景 | 链接 |
 |---|---|---|---|---|
 | Salesforce Agentforce | 商业平台 | CRM 原生智能体，直接长在客户数据与销售、服务流程之上 | 客户数据沉在 Salesforce 的企业；销售、客服流程自动化 | [官网](https://www.salesforce.com/agentforce/) |
-| Microsoft Copilot Studio | 商业平台 | 依托 M365 生态的低代码智能体构建，直接部署进 Teams、Outlook；专业开发走 Azure AI Foundry | 办公在微软系的企业；员工助手、办公协同 | [官网](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio) |
+| Microsoft Copilot Studio | 商业平台 | 依托 M365 生态的低代码智能体构建，直接部署进 Teams、Outlook；专业开发走 Azure AI Foundry | 办公在微软系的企业；员工助手、办公协同 | [官网](https://www.microsoft.com/en-us/microsoft-365-copilot/microsoft-copilot-studio) |
 | Google Gemini Enterprise | 商业平台 | 统一入口加智能体编排，2026 年与 Vertex AI 整合为统一企业智能体平台，力推 A2A 协议 | Google Cloud / Workspace 生态；跨系统编排 | [官网](https://cloud.google.com/gemini-enterprise) |
 | AWS Bedrock AgentCore | 商业平台 | 基础设施中立的托管运行时：“自带框架、自带模型、自带协议”，配安全、记忆与可观测能力 | 技术自主性强、多云多模型并存的组织 | [官网](https://aws.amazon.com/bedrock/agentcore/) |
 | 阿里云百炼 | 商业平台 | 一站式模型服务与智能体开发平台，依托通义系模型，企业级集成能力较全 | 国内企业级应用开发 | [官网](https://www.aliyun.com/product/bailian) |
 | 字节扣子（Coze） | 商业平台 | 零代码搭建与插件生态见长，核心引擎已开源，走“商业平台＋开源”双线 | 轻量应用、面客分发 | [官网](https://www.coze.cn) |
-| 百度千帆 | 商业平台 | 覆盖模型开发到应用搭建的全流程平台，依托文心系模型 | 国内企业级应用开发 | [官网](https://cloud.baidu.com/product/qianfan) |
+| 百度千帆 | 商业平台 | 覆盖模型开发到应用搭建的全流程平台，依托文心系模型 | 国内企业级应用开发 | [官网](https://cloud.baidu.com/product-s/qianfan_home) |
 | 腾讯元器 | 商业平台 | 轻量智能体创作与微信生态分发；企业级场景由腾讯云智能体开发平台承接（产品线多次调整，以官方页面为准） | 轻量应用、微信生态触达 | [官网](https://yuanqi.tencent.com) |
 | SAP Joule / ServiceNow AI Agents 等 | 商业平台（SaaS 内嵌） | SaaS 产品原地长出的智能体能力，国内用友、金蝶等 ERP 与财务软件同样在版本升级中内嵌 | 采购独立 AI 产品前，先盘点现有软件供应商的智能体路线图，避免重复付费 | —（见各自产品页） |
 
