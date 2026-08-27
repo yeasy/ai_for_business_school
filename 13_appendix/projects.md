@@ -27,7 +27,7 @@
 |---|---|---|---|---|
 | Salesforce Agentforce | 商业平台 | CRM 原生智能体，直接长在客户数据与销售、服务流程之上 | 客户数据沉在 Salesforce 的企业；销售、客服流程自动化 | [官网](https://www.salesforce.com/agentforce/) |
 | Microsoft Copilot Studio | 商业平台 | 依托 M365 生态的低代码智能体构建，直接部署进 Teams、Outlook；专业开发走 Azure AI Foundry | 办公在微软系的企业；员工助手、办公协同 | [官网](https://www.microsoft.com/en-us/microsoft-365-copilot/microsoft-copilot-studio) |
-| Google Gemini Enterprise | 商业平台 | 统一入口加智能体编排，2026 年与 Vertex AI 整合为统一企业智能体平台，力推 A2A 协议 | Google Cloud / Workspace 生态；跨系统编排 | [官网](https://cloud.google.com/gemini-enterprise) |
+| Google Gemini Enterprise | 商业平台 | 统一入口加智能体编排，2026 年 4 月 Vertex AI 演进为 Gemini Enterprise Agent Platform 后与之组成统一企业智能体平台，力推 A2A 协议 | Google Cloud / Workspace 生态；跨系统编排 | [官网](https://cloud.google.com/gemini-enterprise) |
 | AWS Bedrock AgentCore | 商业平台 | 基础设施中立的托管运行时：“自带框架、自带模型、自带协议”，配安全、记忆与可观测能力 | 技术自主性强、多云多模型并存的组织 | [官网](https://aws.amazon.com/bedrock/agentcore/) |
 | 阿里云百炼 | 商业平台 | 一站式模型服务与智能体开发平台，依托通义系模型，企业级集成能力较全 | 国内企业级应用开发 | [官网](https://www.aliyun.com/product/bailian) |
 | 字节扣子（Coze） | 商业平台 | 零代码搭建与插件生态见长，核心引擎已开源，走“商业平台＋开源”双线 | 轻量应用、面客分发 | [官网](https://www.coze.cn) |
