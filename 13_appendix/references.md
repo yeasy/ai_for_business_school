@@ -143,7 +143,8 @@
 ### 第十二章 治理、合规与未来
 
 - 【政策】国家互联网信息办公室等四部门：《人工智能生成合成内容标识办法》，2025 年。<https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm>
-- 【政策】国家互联网信息办公室：生成式人工智能服务备案与登记情况公告，2026 年。<https://www.cac.gov.cn/2026-03/17/c_1775482074695536.htm>
+- 【政策】国家互联网信息办公室：《关于发布生成式人工智能服务已备案信息的公告（2026 年 5 月至 6 月）》（正文累计数，截至 2026 年 6 月 30 日），2026 年。<https://www.cac.gov.cn/2026-07/10/c_1785427810632554.htm>
+- 【政策】国家互联网信息办公室：《关于发布生成式人工智能服务已备案信息的公告（2026 年 1 月至 2 月）》（图 12-2 数据，截至 2026 年 2 月 28 日），2026 年。<https://www.cac.gov.cn/2026-03/17/c_1775482074695536.htm>
 - 【政策】欧盟：《人工智能法案》（Regulation (EU) 2024/1689），2024 年。<https://eur-lex.europa.eu/eli/reg/2024/1689/oj>
 - 【政策】欧盟理事会：《Artificial intelligence: Council and Parliament agree to simplify and streamline rules》（“数字综合修正案”政治协议新闻稿），2026 年。<https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/>
 - 【政策】欧盟委员会：《AI Omnibus enters into force》（“数字综合修正案”2026 年 7 月 27 日生效公告），2026 年。<https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force>
