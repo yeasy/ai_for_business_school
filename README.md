@@ -1,8 +1,8 @@
 # 商学院 AI 必修课：企业如何迎接智能体浪潮
 
-从企业经营视角理解智能体，算清 AI 项目的投入产出，决定如何试点和扩大应用。
+面向管理者的智能体指南，涵盖试点、投入产出和规模化应用。
 
-**[在 GitBook 阅读第一章 · 人工智能的商业本质](https://yeasy.gitbook.io/ai_for_business_school/di-yi-bu-fen-ren-zhi-pian-kan-dong-zhi-neng-ti-lang-chao/01_essence)**
+**[在 GitBook 阅读第一章](https://yeasy.gitbook.io/ai_for_business_school/di-yi-bu-fen-ren-zhi-pian-kan-dong-zhi-neng-ti-lang-chao/01_essence)**
 
 [全书目录（GitHub）](https://github.com/yeasy/ai_for_business_school/blob/main/SUMMARY.md) · [正式 PDF（发布页）](https://github.com/yeasy/ai_for_business_school/releases/latest)
 
